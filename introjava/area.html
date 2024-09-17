@@ -5,10 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body onload="getLocation()">
+
+<body  onload= "window()" onload="getLocation()">
 
 <p id="demo"></p>
-
+<p id="anotherwindow"><p>
+    <script type="text/javascript">
+     function window (){
+         var anotherwindow=window.open("locate.html")
+         anotherwindow.bgColor="black"
+     }
+    </script>
 <script>
 const x = document.getElementById("demo");
 
